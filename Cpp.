@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Topics Flowchart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f7fc;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0d47a1;
+      margin-bottom: 40px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      border-top: 8px solid;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .box h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #1e3a8a;
+    }
+
+    .box ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .box ul li {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+    .topic1 { border-color: #1976d2; }
+    .topic2 { border-color: #388e3c; }
+    .topic3 { border-color: #f57c00; }
+    .topic4 { border-color: #8e24aa; }
+    .topic5 { border-color: #d32f2f; }
+    .topic6 { border-color: #0097a7; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🚀 C++ Topics Flowchart (Grid View)</h1>
+
+  <div class="grid-container">
+
+    <div class="box topic1">
+      <h2>1. Basics of C++</h2>
+      <ul>
+        <li>History of C++</li>
+        <li>Structure of a C++ Program</li>
+        <li>Data Types and Variables</li>
+        <li>Operators and Expressions</li>
+        <li>I/O Operations (cin, cout)</li>
+      </ul>
+    </div>
+
+    <div class="box topic2">
+      <h2>2. Control Structures</h2>
+      <ul>
+        <li>Conditional Statements (if, else, switch)</li>
+        <li>Loops (for, while, do-while)</li>
+        <li>Break and Continue</li>
+        <li>Nested Control Statements</li>
+      </ul>
+    </div>
+
+    <div class="box topic3">
+      <h2>3. Functions</h2>
+      <ul>
+        <li>User-defined Functions</li>
+        <li>Function Overloading</li>
+        <li>Default Arguments</li>
+        <li>Inline Functions</li>
+        <li>Recursion</li>
+      </ul>
+    </div>
+
+    <div class="box topic4">
+      <h2>4. Object-Oriented Programming</h2>
+      <ul>
+        <li>Classes and Objects</li>
+        <li>Encapsulation and Abstraction</li>
+        <li>Inheritance and Types</li>
+        <li>Polymorphism</li>
+        <li>Constructors and Destructors</li>
+      </ul>
+    </div>
+
+    <div class="box topic5">
+      <h2>5. Advanced C++ Concepts</h2>
+      <ul>
+        <li>Operator Overloading</li>
+        <li>Friend Functions</li>
+        <li>Templates</li>
+        <li>Exception Handling</li>
+        <li>Namespaces</li>
+      </ul>
+    </div>
+
+    <div class="box topic6">
+      <h2>6. File Handling</h2>
+      <ul>
+        <li>File Streams (ifstream, ofstream)</li>
+        <li>Read/Write Operations</li>
+        <li>File Modes</li>
+        <li>Error Handling in Files</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
