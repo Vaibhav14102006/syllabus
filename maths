@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Maths Topics Grid Flowchart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f8fc;
+      margin: 0;
+      padding: 30px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 40px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .module-box {
+      background-color: white;
+      border-radius: 12px;
+      padding: 20px;
+      border-top: 8px solid;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeIn 1s ease;
+    }
+
+    .module-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .module-box h2 {
+      margin-top: 0;
+      font-size: 18px;
+      color: #0d47a1;
+    }
+
+    .module-box ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    .module-box ul li {
+      margin: 6px 0;
+      line-height: 1.4;
+    }
+
+    .module1 { border-color: #1976d2; }
+    .module2 { border-color: #388e3c; }
+    .module3 { border-color: #f57c00; }
+    .module4 { border-color: #8e24aa; }
+    .module5 { border-color: #d32f2f; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📘 Maths Topics Flowchart (Grid View)</h1>
+
+  <div class="grid-container">
+
+    <div class="module-box module1">
+      <h2>Module I: Ordinary Differential Equations</h2>
+      <ul>
+        <li>Introduction to ODE</li>
+        <li>Order & Degree</li>
+        <li>Exact & Linear Equations</li>
+        <li>Bernoulli’s Equation</li>
+        <li>Higher Degree (p, y, x)</li>
+        <li>Clairaut’s Type</li>
+        <li>Higher Order Linear (Constant/Variable)</li>
+        <li>Variation of Parameters</li>
+        <li>Series Method</li>
+      </ul>
+    </div>
+
+    <div class="module-box module2">
+      <h2>Module II: Partial Differential Equations</h2>
+      <ul>
+        <li>Formation of PDEs</li>
+        <li>First Order PDEs</li>
+        <li>Second Order (Linear, Homogeneous)</li>
+        <li>Charpit’s Method</li>
+        <li>Separation of Variables</li>
+        <li>Heat Equation</li>
+        <li>Wave Equation</li>
+      </ul>
+    </div>
+
+    <div class="module-box module3">
+      <h2>Module III: Laplace & Fourier Series</h2>
+      <ul>
+        <li>Laplace of Functions</li>
+        <li>Properties & Shifting</li>
+        <li>Derivative & Inverse Laplace</li>
+        <li>Convolution Theorem</li>
+        <li>ODE Applications</li>
+        <li>Fourier Series</li>
+        <li>Even, Odd & Half-Range</li>
+      </ul>
+    </div>
+
+    <div class="module-box module4">
+      <h2>Module IV: Complex Variables – Differentiation</h2>
+      <ul>
+        <li>Complex Functions</li>
+        <li>Differentiation</li>
+        <li>Analytic & Harmonic Functions</li>
+        <li>Cauchy-Riemann Equations</li>
+        <li>Harmonic Conjugates</li>
+        <li>Conformal Mapping</li>
+        <li>Mobius Transformation</li>
+      </ul>
+    </div>
+
+    <div class="module-box module5">
+      <h2>Module V: Complex Variables – Integration</h2>
+      <ul>
+        <li>Contour Integrals</li>
+        <li>Cauchy-Goursat & Integral Formula</li>
+        <li>Liouville & Max-Modulus</li>
+        <li>Taylor & Laurent Series</li>
+        <li>Residues & Singularities</li>
+        <li>Improper Integrals</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
